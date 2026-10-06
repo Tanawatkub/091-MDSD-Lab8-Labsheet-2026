@@ -189,7 +189,7 @@ dart run build_runner build --delete-conflicting-outputs
    เพื่อให้ตรงบทเรียนและป้องกันแถวซ้ำสะสม
 ```
 
-![alt text](image.png)
+![alt text](image/image.png)
 
 
 ---
@@ -289,10 +289,10 @@ dart run build_runner build --delete-conflicting-outputs
 capture หน้าจอผลลัพธ์คำสั่ง `dart run build_runner build` จากขั้นตอนที่ 3.2 ที่แสดงว่าสร้างไฟล์สำเร็จ (ไม่มี Error เรื่อง Class ชื่อซ้ำ) จากนั้นเปิดไฟล์ main.dart ที่แก้ตามขั้นตอนที่ 3.3 โดย ยังไม่ต้องรันแอปในจุดนี้ เพราะ VS Code จะขีดเส้นสีแดงใต้ FavoritesRepositoryDrift และ ListingDraftRepositoryDrift (ยังไม่มี Class จริง จะเขียน Class นี้ในส่วนที่ 4-5) และถ้าสั่งรันตอนนี้แอปจะ Error ทันทีเพราะคอมไพล์ไม่ผ่าน ถือเป็นเรื่องปกติ — จะกลับมารันแอปได้จริงอีกครั้งหลังทำ Checkpoint 4.1 และ 5.1 เสร็จ
 
 - หน้าจอผลลัพธ์คำสั่ง `dart run build_runner build` จากขั้นตอนที่ 3.2
-![alt text](image-1.png)
+![alt text](image/image-1.png)
 
 - เปิดไฟล์ main.dart ที่แก้ตามขั้นตอนที่ 3.3 
-![alt text](image-2.png)
+![alt text](image/image-2.png)
 
 ---
 
@@ -418,20 +418,20 @@ items: const [
 > ✅ **Checkpoint 4.1** รันแอปแล้วทดสอบ: (ก) กดหัวใจที่สินค้า 3 ชิ้นจากหน้า Home (ข) สลับไป Tab "รายการโปรด" เห็นครบทั้ง 3 ชิ้น (ค) ปิดแอปให้สนิท (Force Stop หรือปัดออกจาก Recent Apps) แล้วเปิดใหม่ กลับไปที่ Tab รายการโปรดอีกครั้ง ถ่ายภาพหน้าจอ (ข) และ (ค) เทียบกัน ต้องแสดงรายการเดิมครบทุกชิ้น พร้อมทดสอบกดลบ (Remove) 1 ชิ้น แล้วปิดเปิดแอปใหม่อีกครั้งเพื่อยืนยันว่าการลบก็ถูกบันทึกถาวรเช่นกัน (ง) กลับไปหน้า Home แล้วกดหัวใจซ้ำที่สินค้าชิ้นเดิมอีกครั้ง (ชิ้นที่ยังไม่ได้ลบ) แล้วตรวจสอบที่ Tab รายการโปรดว่ายังแสดงสินค้าชิ้นนั้นแค่แถวเดียว ไม่ซ้ำเป็น 2 แถว และแอปไม่ Error
 
 (ก) กดหัวใจที่สินค้า 3 ชิ้นจากหน้า Home 
-![alt text](image-3.png)
-![alt text](image-4.png)
+![alt text](image/image-3.png)
+![alt text](image/image-4.png)
 
 (ข) สลับไป Tab "รายการโปรด" เห็นครบทั้ง 3 ชิ้น
-![alt text](image-5.png)
+![alt text](image/image-5.png)
 
 (ค) ปิดแอปให้สนิท (Force Stop หรือปัดออกจาก Recent Apps) แล้วเปิดใหม่ กลับไปที่ Tab รายการโปรดอีกครั้ง
-![alt text](image-6.png)
-![alt text](image-7.png)
-![alt text](image-8.png)
+![alt text](image/image-6.png)
+![alt text](image/image-7.png)
+![alt text](image/image-8.png)
 
 (ง) กลับไปหน้า Home แล้วกดหัวใจซ้ำที่สินค้าชิ้นเดิมอีกครั้ง (ชิ้นที่ยังไม่ได้ลบ) แล้วตรวจสอบที่ Tab รายการโปรดว่ายังแสดงสินค้าชิ้นนั้นแค่แถวเดียว ไม่ซ้ำเป็น 2 แถว และแอปไม่ Error
-![alt text](image-9.png)
-![alt text](image-10.png)
+![alt text](image/image-9.png)
+![alt text](image/image-10.png)
 
 ---
 
@@ -480,17 +480,17 @@ class SellItemPage extends StatefulWidget {
 > ✅ **Checkpoint 5.1** รันแอปแล้วทำตามลำดับนี้: 1. สร้างร่างประกาศใหม่ผ่าน Tab "ลงประกาศขาย" ด้วยความช่วยเหลือของ AI เหมือนสัปดาห์ที่ 7 2. กดยืนยันร่าง 3. กดปุ่มไอคอนเข้าหน้า "ร่างประกาศของฉัน" แล้วเห็นร่างที่เพิ่งสร้าง 4. ปิดแอปให้สนิทแล้วเปิดใหม่ กลับเข้าหน้า "ร่างประกาศของฉัน" อีกครั้ง ถ่ายภาพหน้าจอทั้ง 4 ขั้นตอนนี้แนบส่ง เพื่อพิสูจน์ว่าร่างไม่หายไปแม้ปิดแอปแล้ว 
 
  1. สร้างร่างประกาศใหม่ผ่าน Tab "ลงประกาศขาย" ด้วยความช่วยเหลือของ AI เหมือนสัปดาห์ที่ 7
- ![alt text](image-11.png)
+ ![alt text](image/image-11.png)
 
  2. กดยืนยันร่าง
-![alt text](image-12.png)
+![alt text](image/image-12.png)
 
 3. กดปุ่มไอคอนเข้าหน้า "ร่างประกาศของฉัน" แล้วเห็นร่างที่เพิ่งสร้าง
-![alt text](image-13.png)
+![alt text](image/image-13.png)
 
 4. ปิดแอปให้สนิทแล้วเปิดใหม่ กลับเข้าหน้า "ร่างประกาศของฉัน" อีกครั้ง 
-![alt text](image-14.png)
-![alt text](image-15.png)
+![alt text](image/image-14.png)
+![alt text](image/image-15.png)
 ---
 
 ## ส่วนที่ 6: ทดสอบสถานการณ์ Offline-first
@@ -501,10 +501,10 @@ class SellItemPage extends StatefulWidget {
 
 > ✅ **Checkpoint 6.1** ถ่ายภาพหน้าจอที่แสดงให้เห็นว่า Tab รายการโปรดและหน้าร่างประกาศยังคงแสดงข้อมูลได้ตามปกติแม้ไม่มีอินเทอร์เน็ตเลย (ส่วน Tab หน้าหลักที่ดึงจาก Fake Store API คาดว่าจะแสดง Error ตามปกติ เพราะยังไม่ได้ทำ Local Cache ให้หน้านั้น) 
 
-![alt text](image-16.png)
-![alt text](image-17.png)
-![alt text](image-19.png)
-![alt text](image-18.png)
+![alt text](image/image-16.png)
+![alt text](image/image-17.png)
+![alt text](image/image-19.png)
+![alt text](image/image-18.png)
 ---
 
 ## ปัญหาที่พบบ่อยและวิธีแก้ไข (Troubleshooting)
